@@ -9,8 +9,8 @@ class TestLuhnValidation < Test::Unit::TestCase
      expected = [4, 4, 4, 4, 3, 3, 3, 3, 2, 2, 2, 2, 1, 1, 1, 1]
      cc_handler = LuhnValidation.new
      cc_handler.validate(cc_num)
-     assert_equal expected, cc_handler.cc_clean_arr
-     expected.each_index { | i | assert_equal expected[i], cc_handler.cc_clean_arr[i]}
+     assert_equal expected, cc_handler.cc_clean
+     expected.each_index { | i | assert_equal expected[i], cc_handler.cc_clean[i]}
    end
 
    def test_can_clean_alpha_characters
@@ -18,8 +18,8 @@ class TestLuhnValidation < Test::Unit::TestCase
      expected = [4, 4, 4, 4, 3, 3, 3, 3, 2, 2, 2, 2, 1, 1, 1, 1]
      cc_handler = LuhnValidation.new
      cc_handler.validate(cc_num)
-     assert_equal expected, cc_handler.cc_clean_arr
-     expected.each_index { | i | assert_equal expected[i], cc_handler.cc_clean_arr[i]}
+     assert_equal expected, cc_handler.cc_clean
+     expected.each_index { | i | assert_equal expected[i], cc_handler.cc_clean[i]}
    end
 
    def test_can_clean_special_characters
@@ -27,8 +27,8 @@ class TestLuhnValidation < Test::Unit::TestCase
      expected = [4, 4, 4, 4, 3, 3, 3, 3, 2, 2, 2, 2, 1, 1, 1, 1]
      cc_handler = LuhnValidation.new
      cc_handler.validate(cc_num)
-     assert_equal expected, cc_handler.cc_clean_arr
-     expected.each_index { | i | assert_equal expected[i], cc_handler.cc_clean_arr[i]}
+     assert_equal expected, cc_handler.cc_clean
+     expected.each_index { | i | assert_equal expected[i], cc_handler.cc_clean[i]}
    end
 
    def test_can_clean_spaces
@@ -36,8 +36,8 @@ class TestLuhnValidation < Test::Unit::TestCase
      expected = [4, 4, 4, 4, 3, 3, 3, 3, 2, 2, 2, 2, 1, 1, 1, 1]
      cc_handler = LuhnValidation.new
      cc_handler.validate(cc_num)
-     assert_equal expected, cc_handler.cc_clean_arr
-     expected.each_index { | i | assert_equal expected[i], cc_handler.cc_clean_arr[i]}
+     assert_equal expected, cc_handler.cc_clean
+     expected.each_index { | i | assert_equal expected[i], cc_handler.cc_clean[i]}
    end
 
    def test_can_handle_empty_string
@@ -45,8 +45,8 @@ class TestLuhnValidation < Test::Unit::TestCase
      expected = []
      cc_handler = LuhnValidation.new
      cc_handler.validate(cc_num)
-     assert_equal expected, cc_handler.cc_clean_arr
-     expected.each_index { | i | assert_equal expected[i], cc_handler.cc_clean_arr[i]}
+     assert_equal expected, cc_handler.cc_clean
+     expected.each_index { | i | assert_equal expected[i], cc_handler.cc_clean[i]}
    end
 
    def test_can_handle_nil_string
@@ -54,8 +54,8 @@ class TestLuhnValidation < Test::Unit::TestCase
      expected = []
      cc_handler = LuhnValidation.new
      cc_handler.validate(cc_num)
-     assert_equal expected, cc_handler.cc_clean_arr
-     expected.each_index { | i | assert_equal expected[i], cc_handler.cc_clean_arr[i]}
+     assert_equal expected, cc_handler.cc_clean
+     expected.each_index { | i | assert_equal expected[i], cc_handler.cc_clean[i]}
    end
    
   def test_can_process_valid_cc
