@@ -1,8 +1,8 @@
 require 'test/unit'
 require File.expand_path(File.dirname(__FILE__) + '/../lib/luhn.rb')
-require File.expand_path(File.dirname(__FILE__) + '/../lib/luhn_validator.rb')
+require File.expand_path(File.dirname(__FILE__) + '/../lib/luhn_validation.rb')
 require File.expand_path(File.dirname(__FILE__) + '/helper.rb')
-include Validation
+
 
 class TestLuhn < Test::Unit::TestCase
   
