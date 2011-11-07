@@ -1,5 +1,6 @@
 require 'test/unit'
 require File.expand_path(File.dirname(__FILE__) + '/../lib/luhn.rb')
+require File.expand_path(File.dirname(__FILE__) + '/../lib/credit_card_handler.rb')
 require File.expand_path(File.dirname(__FILE__) + '/helper.rb')
 
 class TestLuhn < Test::Unit::TestCase
