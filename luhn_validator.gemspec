@@ -1,5 +1,5 @@
 Gem::Specification.new do |s|
-  s.name        = 'luhn'
+  s.name        = 'luhn_validator'
   s.version     = '0.0.1'
   s.date        = '2011-11-07'
   s.summary     = 'Luhn algorithm validation for credit cards'
@@ -7,5 +7,5 @@ Gem::Specification.new do |s|
   s.authors     = ['Owen Byrne']
   s.email       = ['owen@whoisowenbyrne.com']
   s.homepage    = "http://whoisowenbyrne.com"
-  s.files       = ['lib/credit_card_handler.rb', 'lib/luhn.rb']
+  s.files       = ['lib/validator.rb', 'lib/luhn.rb']
 end
