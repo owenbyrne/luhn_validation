@@ -3,6 +3,11 @@
 ## Introduction
 A ruby gem implementing the Luhn (Modulus 10) algorithm commonly used for credit card validation.
 
+## Important
+This software can only be used to check if a given number passes the Luhn algorithm.  In cannot determine if a given number belongs to a credit card that is legitimate, in service or in any way valid as it does not interact with any financial institutions.
+
+Refer to the License for further details.
+
 ## Installation
 
 	gem install luhn_validation
