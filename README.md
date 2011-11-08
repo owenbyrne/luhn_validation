@@ -25,7 +25,7 @@ Validate returns true if the number passes luhn validation, false otherwise.
 
     luhn_val.validate('4444-3333-2222-1111')
 
-You can also access the validation objects more recently processed number via the cc_dirty and cc_clean attributes.
+You can also access the validation object's more recently processed number via the cc_dirty and cc_clean attributes.
 
     luhn_val.cc_dirty # => '4444-3333-2222-1111'
     luhn_val.cc_clean # => 4444333322221111
