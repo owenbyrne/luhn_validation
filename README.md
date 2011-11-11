@@ -21,7 +21,7 @@ Instantiate a validation object:
 
 	luhn_val = LuhnValidation.new
 
-Validate the credit card number.  Note that basic string sanitising is performed performed, so acceptable formats include:
+Validate the credit card number.  Note that basic string sanitising is performed, acceptable formats include:
 
 * Alpha character separated strings such as hyphens (4444-3333-2222-1111) or whitespace (4444 3333 2222 1111) etc.
 * FIXNUM
