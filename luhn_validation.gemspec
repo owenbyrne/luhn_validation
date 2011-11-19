@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name        = 'luhn_validation'
-  s.version     = '1.0.0'
-  s.date        = '2011-11-08'
+  s.version     = '1.0.1'
+  s.date        = '2011-11-19'
   s.summary     = 'Luhn algorithm validation for credit cards'
   s.description = 'A ruby gem implementing the Luhn (Modulus 10) algorithm commonly used for credit card validation.'
   s.authors     = ['Owen Byrne']

@@ -10,7 +10,7 @@ class LuhnValidation
     @cc_clean = []
   end
 
-  def validate(cc_str)
+  def valid?(cc_str)
     if cc_str.nil? || cc_str.to_s.empty? 
       false
     else
@@ -19,5 +19,7 @@ class LuhnValidation
       Luhn.compute(@cc_clean)
     end
   end
+  
+  alias :validate :valid?
 
 end
